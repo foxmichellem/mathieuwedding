@@ -1,1 +1,28 @@
-@import flexgrid;
+@import 'flexgrid';
+
+body {
+  margin: 0;
+}
+
+.hero {
+  img {
+    width: 100%;
+  }
+}
+
+.story {
+  &__header {
+    text-align: center;
+  }
+
+  &__body {
+    text-align: center;
+  }
+}
+
+.photos {
+  &__photo {
+    width: 100%;
+    display: inline;
+  }
+}
