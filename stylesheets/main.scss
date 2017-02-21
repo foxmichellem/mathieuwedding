@@ -1,14 +1,57 @@
 @import 'flexgrid';
 
+@font-face {
+  font-family: "Wildera";
+  src: url(../fonts/Wildera-Regular.otf);
+}
+h1, h2, h3, h4 { font-family: "Wildera", sans-serif }
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
 body {
   margin: 0;
 }
 
 .hero {
-  img {
+  &__image {
+    background-image: url('../images/hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 26em;
+
+    &--2{
+      background-image: url('../images/footer.jpeg');
+    }
+
+    @media screen and (min-height: 24em) {
+      min-height: 80vh;
+    }
+
+    @media screen and (min-height: 64em) {
+      min-height: 42em;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    position: absolute;
+    bottom: 2em;
+    margin: auto;
     width: 100%;
+
+    &--2 {
+      top: 2em;
+    }
   }
 }
+
 
 .story {
   &__header {
@@ -25,4 +68,33 @@ body {
     width: 100%;
     display: inline;
   }
+}
+
+.countdown{
+  &__box {
+    text-align: center;
+  }
+
+  &__value {
+    padding: 1em;
+    margin: auto;
+    display: inline-block;
+    border: 1px solid black;
+  }
+}
+
+.plans {
+  &__section {
+    text-align: center;
+    border: 1px solid black;
+    width: 80%;
+    margin: 1em auto;
+    padding: 1em;
+
+    & img {
+      width: 75px;
+      height: 75px;
+    }
+  }
+
 }

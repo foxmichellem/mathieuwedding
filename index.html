@@ -1,12 +1,14 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.countdown.min.js"></script>
     <script type="text/javascript" src="javascripts/script.js"></script>
   </head>
   <body>
 
     <!-- Navigation -->
-    <div class="container">
+    <div class="container-fluid">
       <div class="col-xs-12">
         <div class="nav">
           <div class="nav__item">
@@ -23,16 +25,18 @@
 
     <!-- Hero image -->
     <div class="hero">
-      <div class="container">
+      <div class="container-fluid">
         <div class="col-xs-12">
-          <img class="hero__image" src="http://lorempixel.com/800/450/fashion"/>
+          <div class="hero__image">
+            <h1 class="hero__title">Katie and Brian</h1>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Information about bride and groom -->
     <div class="story">
-      <div class="container">
+      <div class="container-fluid">
         <div class="col-xs-12 col-md-10 col-md-offset-1">
           <h2 class="story__header">
             Our story
@@ -47,26 +51,26 @@
     </div>
 
     <!-- Photos of the bride and groom -->
-    <div class="container">
+    <div class="container-fluid">
       <div class="photos">
         <div class="row">
-          <div class="col-xs-12 col-md-4 col-lg-2">
-            <img class="photos__photo" src="http://lorempixel.com/450/300/people"/>
+          <div class="col-xs-12 col-sm-4 col-md-2">
+            <img class="photos__photo" src="images/small-1.jpeg"/>
           </div>
-          <div class="col-xs-12 col-md-4 col-lg-2">
-            <img class="photos__photo" src="http://lorempixel.com/450/300/fashion"/>
+          <div class="col-xs-12 col-sm-4 col-md-2">
+            <img class="photos__photo" src="images/small-2.jpeg"/>
           </div>
-          <div class="col-xs-12 col-md-4 col-lg-2">
-            <img class="photos__photo" src="http://lorempixel.com/450/300/sports"/>
+          <div class="col-xs-12 col-sm-4 col-md-2">
+            <img class="photos__photo" src="images/small-3.jpeg"/>
           </div>
-          <div class="col-xs-12 col-md-4 col-lg-2">
-            <img class="photos__photo" src="http://lorempixel.com/450/300/animals"/>
+          <div class="col-xs-12 col-sm-4 col-md-2">
+            <img class="photos__photo" src="images/small-4.jpeg"/>
           </div>
-          <div class="col-xs-12 col-md-4 col-lg-2">
-            <img class="photos__photo" src="http://lorempixel.com/450/300/nature"/>
+          <div class="col-xs-12 col-sm-4 col-md-2">
+            <img class="photos__photo" src="images/small-5.jpg"/>
           </div>
-          <div class="col-xs-12 col-md-4 col-lg-2">
-            <img class="photos__photo" src="http://lorempixel.com/450/300/abstract"/>
+          <div class="col-xs-12 col-sm-4 col-md-2">
+            <img class="photos__photo" src="images/small-6.jpeg"/>
           </div>
         </div>
       </div>
@@ -74,21 +78,32 @@
 
     <!-- Wedding day countdown -->
     <div class="countdown">
-      <div class="container">
-        <div class="col-xs-12">
-          <div class="countdown__header">
+      <div class="container-fluid">
+        <div class="row center-xs">
+          <div class="col-xs-12">
+            <h2 class="countdown__header">
+              The big day is coming...
+            </h2>
           </div>
         </div>
-        <div class="col-xs-12 col-md-4">
-          <div class="countdown__box">
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div class="countdown__box">
+              <h2 class="countdown__value countdown__months"></h2>
+              <h3>Months</h3>
+            </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-md-4">
-          <div class="countdown__box">
+          <div class="col-xs-12 col-md-4">
+            <div class="countdown__box">
+              <h2 class="countdown__value countdown__days"></h2>
+              <h3>Days</h3>
+            </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-md-4">
-          <div class="countdown__box">
+          <div class="col-xs-12 col-md-4">
+            <div class="countdown__box">
+              <h2 class="countdown__value countdown__hours"></h2>
+              <h3>Hours</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -96,49 +111,78 @@
 
     <!-- List of members of the bridal party -->
     <div class="party">
-      <div class="container">
-        <div class="col-xs-12">
-          <div class="party__header">
+      <div class="container-fluid">
+        <div class="row center-xs">
+          <div class="col-xs-12">
+            <h2 class="party__header">
+              The Bridal Party
+            </h2>
           </div>
         </div>
-        <div class="col-xs-4">
-          <div class="party__names">
+        <div class="row">
+          <div class="col-xs-2"></div>
+          <div class="col-xs-4">
+            <div class="party__names party__names__girls">
+              <p class="party__names__name">Alyssa</p>
+              <p class="party__names__name">Alyssa</p>
+              <p class="party__names__name">Alyssa</p>
+              <p class="party__names__name">Alyssa</p>
+            </div>
           </div>
-        </div>
-        <div class="col-xs-4">
-          <div class="party__names">
+          <div class="col-xs-4">
+            <div class="party__names party__names__guys">
+              <p class="party__names__name">Matt</p>
+              <p class="party__names__name">Matt</p>
+              <p class="party__names__name">Matt</p>
+              <p class="party__names__name">Matt</p>
+            </div>
           </div>
+          <div class="col-xs-2"></div>
         </div>
       </div>
     </div>
 
     <!-- Information about the wedding day -->
     <div class="plan">
-      <div class="container">
-        <div class="col-xs-12">
-          <div class="plans__header">
+      <div class="container-fluid">
+        <div class="row center-xs">
+          <div class="col-xs-12">
+            <h2 class="plans__header">
+              The plan
+            </h2>
           </div>
         </div>
-        <div class="col-xs-4">
-          <div class="plans__section">
+        <div class="row">
+          <div class="col-xs-4">
+            <div class="plans__section">
+              <img src="images/icon-2.svg">
+              <p class="plans__section__info">Cheesecake ice cream halvah pie marshmallow donut jelly-o soufflé cake. Apple pie chocolate bar fruitcake pudding donut. Danish marshmallow candy halvah.</p>
+            </div>
           </div>
-        </div>
-        <div class="col-xs-4">
-          <div class="plans__section">
+          <div class="col-xs-4">
+            <div class="plans__section">
+              <img src="images/icon-3.svg">
+              <p class="plans__section__info">Cheesecake ice cream halvah pie marshmallow donut jelly-o soufflé cake. Apple pie chocolate bar fruitcake pudding donut. Danish marshmallow candy halvah.</p>
+            </div>
           </div>
-        </div>
-        <div class="col-xs-4">
-          <div class="plans__section">
+          <div class="col-xs-4">
+            <div class="plans__section">
+              <img src="images/icon-1.svg">
+              <p class="plans__section__info">Cheesecake ice cream halvah pie marshmallow donut jelly-o soufflé cake. Apple pie chocolate bar fruitcake pudding donut. Danish marshmallow candy halvah.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- A footer image of the couple -->
-    <div class="container">
-      <div class="col-xs-12">
-        <div class="footer">
+    <div class="hero">
+      <div class="container-fluid">
+        <div class="col-xs-12">
+          <div class="hero__image hero__image--2">
+            <h1 class="hero__title hero__title--2">Contact Us</h1>
+          </div>
         </div>
       </div>
-      </div> 
+    </div>
   </body>
