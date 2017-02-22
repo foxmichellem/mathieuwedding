@@ -1,33 +1,64 @@
 @import 'flexgrid';
 
+
+//Fonts
 @font-face {
-  font-family: "Wildera";
-  src: url(../fonts/Wildera-Regular.otf);
+  font-family: "Cursive";
+  src: url(../fonts/Bromello.ttf);
 }
-h1, h2, h3, h4 { font-family: "Wildera", sans-serif }
+
+@font-face {
+  font-family: "Print";
+  src: url(../fonts/SalinasDemo-Regular.otf);
+}
+
+
+//Colors
+$black: #313628;
+$cream: #F7F4F3;
+$white: #F7F7F7;
+$purple: #7D5484;
+$pink: #F7B2AD;
+$tan: #CEB7B3;
+
+
+//Body styles
+body {
+  margin: 0;
+  color: $black;
+  background-color: $cream;
+  font-family: "Print";
+}
+
+//Headline settings
+h1, h2, h3, h4 {
+  font-family: "Cursive", sans-serif;
+  margin-top: 1em;
+}
 
 h1 {
-  font-size: 48px;
+  font-size: 5em;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 2em;
 }
 
-body {
-  margin: 0;
+h3 {
+  font-size: 1.5em;
 }
 
+// hero section
 .hero {
   &__image {
-    background-image: url('../images/hero.jpeg');
+    background-image: url('../images/hero.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
     min-height: 26em;
 
-    &--2{
-      background-image: url('../images/footer.jpeg');
+    &--footer{
+      background-image: url('../images/footer.jpg');
     }
 
     @media screen and (min-height: 24em) {
@@ -42,18 +73,22 @@ body {
   &__title {
     text-align: center;
     position: absolute;
-    bottom: 2em;
+    bottom: 1em;
     margin: auto;
     width: 100%;
+    color: $pink;
 
-    &--2 {
-      top: 2em;
+    &--footer {
+      top: 1em;
+      color: $purple;
     }
   }
 }
 
-
+// Our story section
 .story {
+  padding: .5em 0;
+
   &__header {
     text-align: center;
   }
@@ -63,33 +98,89 @@ body {
   }
 }
 
+// Photos section
 .photos {
+  padding: .5em 0;
+
+
   &__photo {
-    width: 100%;
-    display: inline;
+    padding: 0;
+
+    img {
+      width: 100%;
+      display: inline;
+    }
   }
 }
 
+//Countdown section
 .countdown{
+  padding: .5em 0;
+
   &__box {
     text-align: center;
+    display: inline-block;
+    border: 5px double $pink;
+    min-width: 90%;
+    margin: .5em 0;
   }
 
   &__value {
-    padding: 1em;
-    margin: auto;
-    display: inline-block;
-    border: 1px solid black;
+    font-family: "Print"
   }
 }
 
-.plans {
-  &__section {
+// Bridal party section
+
+.party {
+  padding: .5em 0;
+
+  &__names {
     text-align: center;
-    border: 1px solid black;
-    width: 80%;
+    padding: 1em;
+    background-color: $white;
+
+    &--girls {
+      border: 10px double $purple;
+      color: $purple;
+    }
+
+    &--guys {
+      border: 10px double $black;
+    }
+
+    &__name {
+      display: inline;
+      font-family: "Print"
+    }
+
+    &__relation {
+      display: inline;
+    }
+  }
+}
+
+// Plans section
+.plans {
+  padding: .5em 0;
+
+  &__container {
+    position: relative;
+  }
+
+  &__section {
+    background-color: $tan;
+    text-align: center;
+    border: 5px double $pink;
     margin: 1em auto;
     padding: 1em;
+    width: 80%;
+
+    &--first {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
 
     & img {
       width: 75px;

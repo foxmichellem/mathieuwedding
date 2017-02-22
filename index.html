@@ -6,29 +6,12 @@
     <script type="text/javascript" src="javascripts/script.js"></script>
   </head>
   <body>
-
-    <!-- Navigation -->
-    <div class="container-fluid">
-      <div class="col-xs-12">
-        <div class="nav">
-          <div class="nav__item">
-          </div>
-          <div class="nav__item">
-          </div>
-          <div class="nav__item">
-          </div>
-          <div class="nav__item">
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Hero image -->
     <div class="hero">
+      <div class="hero__image">
       <div class="container-fluid">
         <div class="col-xs-12">
-          <div class="hero__image">
-            <h1 class="hero__title">Katie and Brian</h1>
+          <h1 class="hero__title">Katie and Brian</h1>
           </div>
         </div>
       </div>
@@ -37,13 +20,13 @@
     <!-- Information about bride and groom -->
     <div class="story">
       <div class="container-fluid">
-        <div class="col-xs-12 col-md-10 col-md-offset-1">
-          <h2 class="story__header">
-            Our story
-          </h2>
-          <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
+            <h2 class="story__header">
+              Our story
+            </h2>
             <p class="story__body">
-              Carrot cake biscuit sweet roll brownie jujubes. Gingerbread cake caramels halvah gummi bears brownie macaroon ice cream muffin. Gingerbread tiramisu jelly beans cake danish dragée. Jelly beans dragée jujubes pastry tootsie roll tart. Donut macaroon marzipan halvah macaroon. Toffee soufflé fruitcake. Caramels cotton candy croissant sugar plum donut. Muffin halvah sesame snaps sugar plum danish bonbon muffin. Halvah sweet chupa chups. Marshmallow candy canes croissant biscuit caramels icing cake bear claw. Topping jelly macaroon cotton candy chocolate. Sugar plum toffee chocolate bar. Pastry dessert carrot cake pastry sugar plum jelly-o gingerbread cake.
+              Brian and Katie met while working together at Yorkshire Manor. After 2 years, Brian finally worked up the courage to ask Katie on a date. Although she didn't say yes at first (the jury is still out on if she was truly 'busy"), Katie agreed to go to dinner with the cute guy in the Detroit Lion's scrubs. And she is sure glad she did! The two fell hard and fast. They began building their lives in Grand Rapids. Katie graduated from Grand Valley and began her nursing career, while Brian began his career at AT&T. About a year and a half after they began dating, Brian pulled off an amazing proposal in San Francisco with the help of close friends and family. And now here we are!
             </p>
           </div>
         </div>
@@ -51,26 +34,26 @@
     </div>
 
     <!-- Photos of the bride and groom -->
-    <div class="container-fluid">
-      <div class="photos">
+    <div class="photos">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-xs-12 col-sm-4 col-md-2">
-            <img class="photos__photo" src="images/small-1.jpeg"/>
+          <div class="col-xs-6 col-sm-2 photos__photo">
+            <img class="" src="images/small-1.jpg"/>
           </div>
-          <div class="col-xs-12 col-sm-4 col-md-2">
-            <img class="photos__photo" src="images/small-2.jpeg"/>
+          <div class="col-xs-6 col-sm-2 photos__photo">
+            <img class="" src="images/small-2.jpg"/>
           </div>
-          <div class="col-xs-12 col-sm-4 col-md-2">
-            <img class="photos__photo" src="images/small-3.jpeg"/>
+          <div class="col-xs-6 col-sm-2 photos__photo">
+            <img class="" src="images/small-3.jpg"/>
           </div>
-          <div class="col-xs-12 col-sm-4 col-md-2">
-            <img class="photos__photo" src="images/small-4.jpeg"/>
+          <div class="col-xs-6 col-sm-2 photos__photo">
+            <img class="" src="images/small-4.jpg"/>
           </div>
-          <div class="col-xs-12 col-sm-4 col-md-2">
-            <img class="photos__photo" src="images/small-5.jpg"/>
+          <div class="col-xs-6 col-sm-2 photos__photo">
+            <img class="" src="images/small-5.jpg"/>
           </div>
-          <div class="col-xs-12 col-sm-4 col-md-2">
-            <img class="photos__photo" src="images/small-6.jpeg"/>
+          <div class="col-xs-6 col-sm-2 photos__photo">
+            <img class="" src="images/small-6.jpg"/>
           </div>
         </div>
       </div>
@@ -86,25 +69,27 @@
             </h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-12 col-md-4">
+        <div class="row center-xs">
+          <div class="col-sm-3"></div>
+          <div class="col-xs-7 col-sm-2">
             <div class="countdown__box">
               <h2 class="countdown__value countdown__months"></h2>
               <h3>Months</h3>
             </div>
           </div>
-          <div class="col-xs-12 col-md-4">
+          <div class="col-xs-7 col-sm-2">
             <div class="countdown__box">
               <h2 class="countdown__value countdown__days"></h2>
               <h3>Days</h3>
             </div>
           </div>
-          <div class="col-xs-12 col-md-4">
+          <div class="col-xs-7 col-sm-2">
             <div class="countdown__box">
               <h2 class="countdown__value countdown__hours"></h2>
               <h3>Hours</h3>
             </div>
           </div>
+          <div class="col-sm-3"></div>
         </div>
       </div>
     </div>
@@ -122,19 +107,75 @@
         <div class="row">
           <div class="col-xs-2"></div>
           <div class="col-xs-4">
-            <div class="party__names party__names__girls">
-              <p class="party__names__name">Alyssa</p>
-              <p class="party__names__name">Alyssa</p>
-              <p class="party__names__name">Alyssa</p>
-              <p class="party__names__name">Alyssa</p>
+            <div class="party__names party__names--girls">
+              <div class="party__names__member">
+                <h3 class="party__names__name">Alyssa</h3>
+                <p class="party__names__relation">Sister</p>
+              </div>
+              <div class="party__names__member">
+                <h3 class="party__names__name">Nicole</h3>
+                <p class="party__names__relation">Cousin</p>
+              </div>
+              <div class="party__names__member">
+                <h3 class="party__names__name">Ashley</h3>
+                <p class="party__names__relation">Sister-in-law</p>
+              </div>
+              <div class="party__names__member">
+                <h3 class="party__names__name">Jessica</h3>
+                <p class="party__names__relation">Friend</p>
+              </div>
+              <div class="party__names__member">
+                <h3 class="party__names__name">Michelle</h3>
+                <p class="party__names__relation">Friend</p>
+              </div>
+              <div class="party__names__member">
+                <h3 class="party__names__name">Gina</h3>
+                <p class="party__names__relation">Friend</p>
+              </div>
+              <div class="party__names__member">
+                <h3 class="party__names__name">Melissa</h3>
+                <p class="party__names__relation">Future sister-in-law</p>
+              </div>
+              <div class="party__names__member">
+                <h3 class="party__names__name">Jessie</h3>
+                <p class="party__names__relation">Friend</p>
+              </div>
             </div>
           </div>
           <div class="col-xs-4">
-            <div class="party__names party__names__guys">
-              <p class="party__names__name">Matt</p>
-              <p class="party__names__name">Matt</p>
-              <p class="party__names__name">Matt</p>
-              <p class="party__names__name">Matt</p>
+            <div class="party__names party__names--guys">
+              <div class="party__names__member">
+                <h3 class="party__names__name">Alyssa</h3>
+                <p class="party__names__relation">Sister</p>
+              </div>
+              <div class="party__names__member">
+                <h3 class="party__names__name">Nicole</h3>
+                <p class="party__names__relation">Cousin</p>
+              </div>
+              <div class="party__names__member">
+                <h3 class="party__names__name">Ashley</h3>
+                <p class="party__names__relation">Sister-in-law</p>
+              </div>
+              <div class="party__names__member">
+                <h3 class="party__names__name">Jessica</h3>
+                <p class="party__names__relation">Friend</p>
+              </div>
+              <div class="party__names__member">
+                <h3 class="party__names__name">Michelle</h3>
+                <p class="party__names__relation">Friend</p>
+              </div>
+              <div class="party__names__member">
+                <h3 class="party__names__name">Gina</h3>
+                <p class="party__names__relation">Friend</p>
+              </div>
+              <div class="party__names__member">
+                <h3 class="party__names__name">Melissa</h3>
+                <p class="party__names__relation">Future sister-in-law</p>
+              </div>
+              <div class="party__names__member">
+                <h3 class="party__names__name">Jessie</h3>
+                <p class="party__names__relation">Friend</p>
+              </div>
             </div>
           </div>
           <div class="col-xs-2"></div>
@@ -143,7 +184,7 @@
     </div>
 
     <!-- Information about the wedding day -->
-    <div class="plan">
+    <div class="plans">
       <div class="container-fluid">
         <div class="row center-xs">
           <div class="col-xs-12">
@@ -152,23 +193,55 @@
             </h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-4">
-            <div class="plans__section">
+        <div class="row center-xs">
+          <div class="col-xs-3 plans__container">
+            <div class="plans__section plans__section--first">
               <img src="images/icon-2.svg">
-              <p class="plans__section__info">Cheesecake ice cream halvah pie marshmallow donut jelly-o soufflé cake. Apple pie chocolate bar fruitcake pudding donut. Danish marshmallow candy halvah.</p>
+              <p>
+                <strong>The Ceremony</strong>
+              </p>
+              <p>
+                Join us for a celebration of our love. The ceremony will be performed by John Doe.
+              <p>
+                September 9, 2017<br>
+                3:00 PM<br>
+              </p>
+              <p>
+                Vos Chapel @ Kuyper College<br>
+                3333 East Beltline Ave NE<br>
+                Grand Rapids, MI 49525
+              </p>
             </div>
           </div>
-          <div class="col-xs-4">
-            <div class="plans__section">
+          <div class="col-xs-3 plans__container">
+            <div class="plans__section plans__section--first">
               <img src="images/icon-3.svg">
-              <p class="plans__section__info">Cheesecake ice cream halvah pie marshmallow donut jelly-o soufflé cake. Apple pie chocolate bar fruitcake pudding donut. Danish marshmallow candy halvah.</p>
+              <p>
+                <strong>The Reception</strong>
+              </p>
+              <p>
+                There will be a cocktail hour at the Waddell Center starting at 5:30pm. Dinner will be served at 6:30pm.
+              </p>
+              <p>
+                September 9, 2017<br>
+                5:30 pm to 11:30 pm<br>
+              </p>
+              <p>
+                The Waddell Center<br>
+                1115 Taylor Ave N<br>
+                Grand Rapids, MI 49503<br>
+              </p>
             </div>
           </div>
-          <div class="col-xs-4">
+          <div class="col-xs-3 plans__container">
             <div class="plans__section">
               <img src="images/icon-1.svg">
-              <p class="plans__section__info">Cheesecake ice cream halvah pie marshmallow donut jelly-o soufflé cake. Apple pie chocolate bar fruitcake pudding donut. Danish marshmallow candy halvah.</p>
+              <p>
+                <strong>Accomodations</strong>
+              </p>
+              <p>
+                We are so grateful for our guests who are traveling from out of town to celebrate this special day with us. For the convenience of those who wish to stay in the city, we have reserved a block of hotel rooms at Homewood Suites by Hilton. Please be sure to reserve your room as soon as possible, but no later than August 2nd, to receive the special discounted rate.
+              </p>
             </div>
           </div>
         </div>
@@ -177,10 +250,9 @@
 
     <!-- A footer image of the couple -->
     <div class="hero">
+      <div class="hero__image hero__image--footer">
       <div class="container-fluid">
         <div class="col-xs-12">
-          <div class="hero__image hero__image--2">
-            <h1 class="hero__title hero__title--2">Contact Us</h1>
           </div>
         </div>
       </div>

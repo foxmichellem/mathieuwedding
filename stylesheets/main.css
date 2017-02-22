@@ -252,7 +252,7 @@
   -ms-flex-order: 1;
   order: 1; }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 36em) {
   .container {
     width: 100%; }
 
@@ -904,28 +904,38 @@
     -ms-flex-order: 1;
     order: 1; } }
 @font-face {
-  font-family: "Wildera";
-  src: url(../fonts/Wildera-Regular.otf); }
+  font-family: "Cursive";
+  src: url(../fonts/Bromello.ttf); }
+@font-face {
+  font-family: "Print";
+  src: url(../fonts/SalinasDemo-Regular.otf); }
+body {
+  margin: 0;
+  color: #313628;
+  background-color: #F7F4F3;
+  font-family: "Print"; }
+
 h1, h2, h3, h4 {
-  font-family: "Wildera", sans-serif; }
+  font-family: "Cursive", sans-serif;
+  margin-top: 1em; }
 
 h1 {
-  font-size: 48px; }
+  font-size: 5em; }
 
 h2 {
-  font-size: 36px; }
+  font-size: 2em; }
 
-body {
-  margin: 0; }
+h3 {
+  font-size: 1.5em; }
 
 .hero__image {
-  background-image: url("../images/hero.jpeg");
+  background-image: url("../images/hero.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
   min-height: 26em; }
-  .hero__image--2 {
-    background-image: url("../images/footer.jpeg"); }
+  .hero__image--footer {
+    background-image: url("../images/footer.jpg"); }
   @media screen and (min-height: 24em) {
     .hero__image {
       min-height: 80vh; } }
@@ -935,37 +945,74 @@ body {
 .hero__title {
   text-align: center;
   position: absolute;
-  bottom: 2em;
+  bottom: 1em;
   margin: auto;
-  width: 100%; }
-  .hero__title--2 {
-    top: 2em; }
-
-.story__header {
-  text-align: center; }
-.story__body {
-  text-align: center; }
-
-.photos__photo {
   width: 100%;
-  display: inline; }
+  color: #F7B2AD; }
+  .hero__title--footer {
+    top: 1em;
+    color: #7D5484; }
 
-.countdown__box {
-  text-align: center; }
-.countdown__value {
-  padding: 1em;
-  margin: auto;
-  display: inline-block;
-  border: 1px solid black; }
+.story {
+  padding: .5em 0; }
+  .story__header {
+    text-align: center; }
+  .story__body {
+    text-align: center; }
 
-.plans__section {
-  text-align: center;
-  border: 1px solid black;
-  width: 80%;
-  margin: 1em auto;
-  padding: 1em; }
-  .plans__section img {
-    width: 75px;
-    height: 75px; }
+.photos {
+  padding: .5em 0; }
+  .photos__photo {
+    padding: 0; }
+    .photos__photo img {
+      width: 100%;
+      display: inline; }
+
+.countdown {
+  padding: .5em 0; }
+  .countdown__box {
+    text-align: center;
+    display: inline-block;
+    border: 5px double #F7B2AD;
+    min-width: 90%;
+    margin: .5em 0; }
+  .countdown__value {
+    font-family: "Print"; }
+
+.party {
+  padding: .5em 0; }
+  .party__names {
+    text-align: center;
+    padding: 1em;
+    background-color: #F7F7F7; }
+    .party__names--girls {
+      border: 10px double #7D5484;
+      color: #7D5484; }
+    .party__names--guys {
+      border: 10px double #313628; }
+    .party__names__name {
+      display: inline;
+      font-family: "Print"; }
+    .party__names__relation {
+      display: inline; }
+
+.plans {
+  padding: .5em 0; }
+  .plans__container {
+    position: relative; }
+  .plans__section {
+    background-color: #CEB7B3;
+    text-align: center;
+    border: 5px double #F7B2AD;
+    margin: 1em auto;
+    padding: 1em;
+    width: 80%; }
+    .plans__section--first {
+      position: absolute;
+      top: 0;
+      bottom: 0; }
+    .plans__section img {
+      width: 75px;
+      height: 75px; }
 
 /*# sourceMappingURL=main.css.map */
