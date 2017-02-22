@@ -4,7 +4,8 @@
 //Fonts
 @font-face {
   font-family: "Cursive";
-  src: url(../fonts/Bromello.ttf);
+  src: url(../fonts/Vellesa.otf);
+  font-stretch: semi-expanded;
 }
 
 @font-face {
@@ -16,10 +17,12 @@
 //Colors
 $black: #313628;
 $cream: #F7F4F3;
-$white: #F7F7F7;
+$off-white: #F7F7F7;
+$white: #FFF;
 $purple: #7D5484;
 $pink: #F7B2AD;
 $tan: #CEB7B3;
+
 
 
 //Body styles
@@ -42,6 +45,7 @@ h1 {
 
 h2 {
   font-size: 2em;
+  margin-top: 0;
 }
 
 h3 {
@@ -87,7 +91,7 @@ h3 {
 
 // Our story section
 .story {
-  padding: .5em 0;
+  padding: 3em 0;
 
   &__header {
     text-align: center;
@@ -100,7 +104,6 @@ h3 {
 
 // Photos section
 .photos {
-  padding: .5em 0;
 
 
   &__photo {
@@ -109,13 +112,16 @@ h3 {
     img {
       width: 100%;
       display: inline;
+      height: auto;
     }
   }
 }
 
 //Countdown section
 .countdown{
-  padding: .5em 0;
+  padding: 3em 0;
+  background-color: $tan;
+  color: $off-white;
 
   &__box {
     text-align: center;
@@ -126,19 +132,20 @@ h3 {
   }
 
   &__value {
-    font-family: "Print"
+    font-family: "Print";
+    margin-top: 1.5em;
   }
 }
 
 // Bridal party section
 
 .party {
-  padding: .5em 0;
+  padding: 3em 0;
+  background-color: $white;
 
   &__names {
     text-align: center;
     padding: 1em;
-    background-color: $white;
 
     &--girls {
       border: 10px double $purple;
@@ -162,7 +169,7 @@ h3 {
 
 // Plans section
 .plans {
-  padding: .5em 0;
+  padding: 3em 0;
 
   &__container {
     position: relative;

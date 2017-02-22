@@ -905,7 +905,8 @@
     order: 1; } }
 @font-face {
   font-family: "Cursive";
-  src: url(../fonts/Bromello.ttf); }
+  src: url(../fonts/Vellesa.otf);
+  font-stretch: semi-expanded; }
 @font-face {
   font-family: "Print";
   src: url(../fonts/SalinasDemo-Regular.otf); }
@@ -923,7 +924,8 @@ h1 {
   font-size: 5em; }
 
 h2 {
-  font-size: 2em; }
+  font-size: 2em;
+  margin-top: 0; }
 
 h3 {
   font-size: 1.5em; }
@@ -954,22 +956,23 @@ h3 {
     color: #7D5484; }
 
 .story {
-  padding: .5em 0; }
+  padding: 3em 0; }
   .story__header {
     text-align: center; }
   .story__body {
     text-align: center; }
 
-.photos {
-  padding: .5em 0; }
-  .photos__photo {
-    padding: 0; }
-    .photos__photo img {
-      width: 100%;
-      display: inline; }
+.photos__photo {
+  padding: 0; }
+  .photos__photo img {
+    width: 100%;
+    display: inline;
+    height: auto; }
 
 .countdown {
-  padding: .5em 0; }
+  padding: 3em 0;
+  background-color: #CEB7B3;
+  color: #F7F7F7; }
   .countdown__box {
     text-align: center;
     display: inline-block;
@@ -977,14 +980,15 @@ h3 {
     min-width: 90%;
     margin: .5em 0; }
   .countdown__value {
-    font-family: "Print"; }
+    font-family: "Print";
+    margin-top: 1.5em; }
 
 .party {
-  padding: .5em 0; }
+  padding: 3em 0;
+  background-color: #FFF; }
   .party__names {
     text-align: center;
-    padding: 1em;
-    background-color: #F7F7F7; }
+    padding: 1em; }
     .party__names--girls {
       border: 10px double #7D5484;
       color: #7D5484; }
@@ -997,7 +1001,7 @@ h3 {
       display: inline; }
 
 .plans {
-  padding: .5em 0; }
+  padding: 3em 0; }
   .plans__container {
     position: relative; }
   .plans__section {
