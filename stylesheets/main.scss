@@ -17,11 +17,9 @@
 //Colors
 $black: #313628;
 $cream: #F7F4F3;
-$off-white: #F7F7F7;
 $white: #FFF;
 $purple: #7D5484;
 $pink: #F7B2AD;
-$tan: #CEB7B3;
 
 
 
@@ -61,6 +59,14 @@ h3 {
     position: relative;
     min-height: 26em;
 
+    img {
+      width: 50%;
+      position: absolute;
+      bottom: 3em;
+      text-align: center;
+      left: 25%;
+    }
+
     &--footer{
       background-image: url('../images/footer.jpg');
     }
@@ -80,7 +86,7 @@ h3 {
     bottom: 1em;
     margin: auto;
     width: 100%;
-    color: $pink;
+    color: $white;
 
     &--footer {
       top: 1em;
@@ -104,7 +110,8 @@ h3 {
 
 // Photos section
 .photos {
-
+  max-width: 100%;
+  overflow: hidden;
 
   &__photo {
     padding: 0;
@@ -120,13 +127,13 @@ h3 {
 //Countdown section
 .countdown{
   padding: 3em 0;
-  background-color: $tan;
-  color: $off-white;
 
   &__box {
+    background-color: $pink;
+    color: $white;
     text-align: center;
     display: inline-block;
-    border: 5px double $pink;
+    border: 5px solid $white;
     min-width: 90%;
     margin: .5em 0;
   }
@@ -144,27 +151,25 @@ h3 {
   background-color: $white;
 
   &__names {
-    text-align: center;
-    padding: 1em;
+    font-size: 1.3em;
+    text-align: right;
+    border-right: 1px solid;
+    padding-right: 1em;
 
-    &--girls {
-      border: 10px double $purple;
-      color: $purple;
-    }
-
-    &--guys {
-      border: 10px double $black;
-    }
-
-    &__name {
-      display: inline;
-      font-family: "Print"
-    }
-
-    &__relation {
-      display: inline;
+    p {
+      margin: .2em 0;
     }
   }
+
+  &__relation {
+    font-size: 1.3em;
+    text-align: left;
+
+    p {
+      margin: .2em 0;
+    }
+  }
+
 }
 
 // Plans section
@@ -176,7 +181,7 @@ h3 {
   }
 
   &__section {
-    background-color: $tan;
+    background-color: $white;
     text-align: center;
     border: 5px double $pink;
     margin: 1em auto;

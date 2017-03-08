@@ -936,6 +936,12 @@ h3 {
   background-position: center;
   position: relative;
   min-height: 26em; }
+  .hero__image img {
+    width: 50%;
+    position: absolute;
+    bottom: 3em;
+    text-align: center;
+    left: 25%; }
   .hero__image--footer {
     background-image: url("../images/footer.jpg"); }
   @media screen and (min-height: 24em) {
@@ -950,7 +956,7 @@ h3 {
   bottom: 1em;
   margin: auto;
   width: 100%;
-  color: #F7B2AD; }
+  color: #FFF; }
   .hero__title--footer {
     top: 1em;
     color: #7D5484; }
@@ -962,21 +968,24 @@ h3 {
   .story__body {
     text-align: center; }
 
-.photos__photo {
-  padding: 0; }
-  .photos__photo img {
-    width: 100%;
-    display: inline;
-    height: auto; }
+.photos {
+  max-width: 100%;
+  overflow: hidden; }
+  .photos__photo {
+    padding: 0; }
+    .photos__photo img {
+      width: 100%;
+      display: inline;
+      height: auto; }
 
 .countdown {
-  padding: 3em 0;
-  background-color: #CEB7B3;
-  color: #F7F7F7; }
+  padding: 3em 0; }
   .countdown__box {
+    background-color: #F7B2AD;
+    color: #FFF;
     text-align: center;
     display: inline-block;
-    border: 5px double #F7B2AD;
+    border: 5px solid #FFF;
     min-width: 90%;
     margin: .5em 0; }
   .countdown__value {
@@ -987,25 +996,24 @@ h3 {
   padding: 3em 0;
   background-color: #FFF; }
   .party__names {
-    text-align: center;
-    padding: 1em; }
-    .party__names--girls {
-      border: 10px double #7D5484;
-      color: #7D5484; }
-    .party__names--guys {
-      border: 10px double #313628; }
-    .party__names__name {
-      display: inline;
-      font-family: "Print"; }
-    .party__names__relation {
-      display: inline; }
+    font-size: 1.3em;
+    text-align: right;
+    border-right: 1px solid;
+    padding-right: 1em; }
+    .party__names p {
+      margin: .2em 0; }
+  .party__relation {
+    font-size: 1.3em;
+    text-align: left; }
+    .party__relation p {
+      margin: .2em 0; }
 
 .plans {
   padding: 3em 0; }
   .plans__container {
     position: relative; }
   .plans__section {
-    background-color: #CEB7B3;
+    background-color: #FFF;
     text-align: center;
     border: 5px double #F7B2AD;
     margin: 1em auto;
