@@ -930,6 +930,11 @@ h2 {
 h3 {
   font-size: 1.5em; }
 
+a {
+  color: #F7B2AD; }
+  a:hover {
+    color: #f2867f; }
+
 .hero__image {
   background-image: url("../images/hero.jpg");
   background-size: cover;
@@ -967,6 +972,15 @@ h3 {
     text-align: center; }
   .story__body {
     text-align: center; }
+    .story__body--cta {
+      margin-top: 50px; }
+      .story__body--cta a {
+        background-color: #F7B2AD;
+        color: #F7F4F3;
+        text-decoration: none;
+        padding: 12px 16px; }
+        .story__body--cta a:hover {
+          background-color: #f2867f; }
 
 .photos {
   max-width: 100%;
